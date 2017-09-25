@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+#nav {
+  border: 1px solid #e9defa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: #ff6600;
+  width: 100%;
+  
+  
+}
+
+
+#about {
+  border: 1px solid #fbfcdb;
+  border-top-color: #e9defa;
+  background: linear-gradient(#e9defa,#fbfcdb);
+}
+
+#photo {
+  border: 1px solid #fbfcdb;
+}
+
+#contack {
+  border: 1px solid #e9defa;;
+  background-color: #e9defa;
+ 
+}
+
+
+/*上面是基礎border*/
+
+/*nav製作*/
+
+
+.menu li {
+  display: inline-block;
+  width: 130px;
+  padding: 10px;
+  border:2px solid white;
+  border-radius: 10px;
+  
+ 
+  text-align: center;
+  background-color: #ff6600;
+  color: #fff;
+}
+a {
+  display: block;
+  color:white;
+  text-decoration: none;
+}
+li:hover {
+  border: 1px solid #ff6600;
+  background-color: white;
+}
+
+li:hover a {
+  color: #ff6600;
+  font-weight: 800;
+}
+ #my-avatar {
+  float: left;
+  
+  margin: 20px 20px 20px 30px;
+ }
+
+ #my-avatar img {
+  width: 200px;
+  border-radius: 20px;
+
+ }
+
+ #my-info h1 {
+  font-family: fantasy;
+  margin-bottom: 10px;
+ }
+ #my-info h4 {
+  font-size: 20px;
+  font-family: fantasy;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+ hr {
+  border:0.5px solid #bbb;
+ }
+ #my-info th, td {
+  font-family: fantasy;
+  text-align: left;
+ }
+.item {
+  position: relative; /*重要觀念*/
+  margin: 10px;
+  max-width: 30%;
+  display:inline-block;
+  border:1px solid #ccc;
+  border-radius: 20px;
+
+}
+.item img {
+  width: 250px;
+  border-radius: 20px;
+}
+
+#photo h1 {
+  text-align: center;
+  font-family: fantasy;
+}
+
+.item-info {
+  position: absolute;  /*重要觀念*/
+  background-color: rgba(255,255,255,.8);
+  top: 0;
+  left: 0;
+  width:250px;
+  height:250px;
+  text-align: center;
+  opacity: 0;
+  border-radius: 20px;
+}
+.item-info table{
+  margin:0px auto;
+}
+.item:hover .item-info {
+  opacity: 1;
+}
+#photo {
+    text-align: center;
+    background: linear-gradient(#fbfcdb,#e9defa);
+    border-bottom: 1px solid #e9defa;
+
+}
+
+label{
+  
+ margin:3px auto 8px auto;
+}
+
+input {
+  width: 300px;
+  display:block;
+  margin:3px auto 8px auto;
+}
+
+textarea {
+  width: 300px;
+  height: 80px;
+  display:block;
+ 
+  margin:3px auto 8px auto;
+}
+button {
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+
+  width:60px;
+  padding:4px 10px;
+  margin-top:3px;
+  margin-bottom: 8px;
+  margin-left:10px;
+  font-family: fantasy;
+  
+}
+.container {
+  width:1000px;
+  margin:0px auto;
+}
+
+#contack {
+  text-align: center;
+  border-top: 1px solid #e9defa;
+}
+
+#content {
+  position:relative;
+  top:70px;
+  
+  margin-top:0px;
+}
+.menu {
+  float: right;
+  margin-left:100px;
+  position: relative;
+  right:100px;
+}
+
+#content > .container > div {
+  padding-top: 70px;
+}
+
+#move {
+ margin-left:300px;
+}
